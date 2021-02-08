@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf.ClassWork", "Wpf.ClassWork.csproj", "{79F78E18-EEC6-49DB-B521-6A50C75A8210}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemLessonStorage", "..\SystemLessonStorage\SystemLessonStorage.csproj", "{7213E0E2-1D51-450E-A293-CA2961536467}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79F78E18-EEC6-49DB-B521-6A50C75A8210}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79F78E18-EEC6-49DB-B521-6A50C75A8210}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79F78E18-EEC6-49DB-B521-6A50C75A8210}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79F78E18-EEC6-49DB-B521-6A50C75A8210}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7213E0E2-1D51-450E-A293-CA2961536467}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7213E0E2-1D51-450E-A293-CA2961536467}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7213E0E2-1D51-450E-A293-CA2961536467}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7213E0E2-1D51-450E-A293-CA2961536467}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A5080F7-D8F1-45C7-A9A4-F621DF43EA2E}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,77 @@
+﻿<Window x:Class="Wpf.ClassWork.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf.ClassWork"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        
+            <Button
+                VerticalAlignment="Stretch"
+                HorizontalAlignment="Stretch"
+                Grid.Row="0"
+                x:Name="toTeachersList"
+                Content="Список преподавателей"
+                Background="LightGreen"
+                FontSize="25"
+                FontWeight="Bold"
+                Click="toTeachersList_Click"/>
+
+            <Button
+                Grid.Row="1"
+                x:Name="toStudentsListBtn"
+                Content="Список студентов"
+                Background="LightGreen"
+                FontSize="25"
+                FontWeight="Bold"
+                Click="toStudentsListBtn_Click"/>
+
+
+            <Button
+                Grid.Row="2"
+                x:Name="toGroupsListBtn"
+                Content="Список Групп"
+                Background="LightGreen"
+                FontSize="25"
+                FontWeight="Bold"
+                Click="toGroupsListBtn_Click"/>
+
+            <Button
+                Grid.Row="3"
+                x:Name="toDisciplinesBtn"
+                Content="Список предметов"
+                Background="LightGreen"
+                FontSize="25"
+                FontWeight="Bold"
+                Click="toDisciplinesBtn_Click"/>
+
+        <Button
+                Grid.Row="4"
+                x:Name="toSpecialtyesBtn"
+                Content="Список Специальностей"
+                Background="LightGreen"
+                FontSize="25"
+                FontWeight="Bold"
+                Click="toSpecialtyesBtn_Click"/>
+
+        <Button
+                Grid.Row="5"
+                x:Name="toTeacherDisciplinesBtn"
+                Content="Диссцеплины и учителя"
+                Background="LightGreen"
+                FontSize="25"
+                FontWeight="Bold"
+                Click="toTeacherDisciplinesBtn_Click"/>
+
+
+    </Grid>
+</Window>

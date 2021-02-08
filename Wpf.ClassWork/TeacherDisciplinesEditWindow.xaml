@@ -1,0 +1,88 @@
+﻿<Window x:Class="Wpf.ClassWork.TeacherDisciplinesEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf.ClassWork"
+        mc:Ignorable="d"
+        Title="TeacherDisciplinesEditWindow" Height="450" Width="800" WindowStartupLocation ="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*"    />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Margin="10" Grid.Row="0" Text="Учитель: "  />
+        <TextBlock Margin="10" Grid.Row="1" Text="Диссциплина: "/>
+        <TextBlock Margin="10" Grid.Row="2" Text="Начало академического года: "/>
+        <TextBlock Margin="10" Grid.Row="3" Text="Конец академического года: "/>
+        <TextBlock Margin="10" Grid.Row="4" Text="Группа: "/>
+        <TextBlock Margin="10" Grid.Row="5" Text="Часы: "/>
+
+        <ComboBox 
+                  SelectedItem="{Binding Teachers}"
+                  Grid.Column="1"
+                  Grid.Row="0"
+                  x:Name="teachersBox"
+                  Margin="10"
+                  MinWidth="200">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock  Text="{Binding Name}" Margin="0,0,5,0"/>
+                        <TextBlock  Text="{Binding Surname}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+
+        </ComboBox>
+        <ComboBox 
+                  SelectedItem="{Binding Disciplines}"
+                  DisplayMemberPath="Name"
+                  Grid.Column="1"
+                  Grid.Row="1"
+                  x:Name="disciplinesBox"
+                  Margin="10"
+                  MinWidth="200">
+
+        </ComboBox>
+        <TextBox Margin="10" Grid.Column="1" Grid.Row="2" Text="{Binding AcademicYearStart}" />
+        <TextBox Margin="10" Grid.Column="1" Grid.Row="3" Text="{Binding AcademicYearEnd}" />
+        <ComboBox 
+                  SelectedItem="{Binding Groups}"
+                  DisplayMemberPath="Name"
+                  Grid.Column="1"
+                  Grid.Row="4"
+                  x:Name="groupsBox"
+                  Margin="10"
+                  MinWidth="200">
+
+        </ComboBox>
+
+        <TextBox Margin="10" Grid.Column="1" Grid.Row="5" Text="{Binding TotalHours}" />
+
+
+        <StackPanel 
+            HorizontalAlignment="Right"
+            Orientation="Horizontal"
+            Grid.Row="7" Grid.ColumnSpan="2"
+            >
+            <Button x:Name="acceptBtn"
+                    Click="acceptBtn_Click"
+                Padding="5" Margin="10,10,0,10" Content="Применить"/>
+            <Button x:Name="rejectBtn"
+                    Click="rejectBtn_Click"
+                Padding="5" Margin="10" Content="Отмена"/>
+        </StackPanel>
+    </Grid>
+</Window>

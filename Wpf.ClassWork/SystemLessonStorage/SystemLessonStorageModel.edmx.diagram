@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ad5fffc803824f91812feaa6ae1e23ba" Name="Diagram1">
+        <EntityTypeShape EntityType="SystemLessonStorageModel.Disciplines" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SystemLessonStorageModel.Groups" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SystemLessonStorageModel.Specialtys" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SystemLessonStorageModel.Students" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SystemLessonStorageModel.TeacherDisciplines" Width="1.5" PointX="8.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SystemLessonStorageModel.Teachers" Width="1.5" PointX="6" PointY="7.25" IsExpanded="true" />
+        <AssociationConnector Association="SystemLessonStorageModel.FK_TeacherDisciplines_Disciplines" ManuallyRouted="false" />
+        <AssociationConnector Association="SystemLessonStorageModel.FK_Group_Specialtys" ManuallyRouted="false" />
+        <AssociationConnector Association="SystemLessonStorageModel.FK_Students_Group" ManuallyRouted="false" />
+        <AssociationConnector Association="SystemLessonStorageModel.FK_TeacherDisciplines_Groups" ManuallyRouted="false" />
+        <AssociationConnector Association="SystemLessonStorageModel.FK_TeacherDisciplines_Teachers" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
